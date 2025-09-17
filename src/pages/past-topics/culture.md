@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: Culture
-summary: TODO: paste a short description.
+title: "Culture"
+summary: "TODO: paste a short description."
 ---
 
 # Culture

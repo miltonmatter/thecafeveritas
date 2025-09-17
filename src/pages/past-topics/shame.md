@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: Shame
-summary: TODO: paste a short description.
+title: "Shame"
+summary: "TODO: paste a short description."
 ---
 
 # Shame

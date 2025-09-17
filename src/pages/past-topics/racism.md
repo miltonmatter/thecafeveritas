@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: Racism
-summary: TODO: paste a short description.
+title: "Racism"
+summary: "TODO: paste a short description."
 ---
 
 # Racism

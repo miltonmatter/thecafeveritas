@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: Social Justice
-summary: TODO: paste a short description.
+title: "Social Justice"
+summary: "TODO: paste a short description."
 ---
 
 # Social Justice

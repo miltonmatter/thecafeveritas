@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: Art
-summary: TODO: paste a short description.
+title: "Art"
+summary: "TODO: paste a short description."
 ---
 
 # Art
