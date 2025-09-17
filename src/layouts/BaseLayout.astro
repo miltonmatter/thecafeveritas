@@ -1,0 +1,53 @@
+---
+const { title = "Café Veritas", description = "Engaging tough questions with humility and hope." } = Astro.props;
+---
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+    {Astro.site && Astro.url && (<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).toString()} />)}
+  </head>
+  <body class="min-h-screen bg-white text-slate-800 flex flex-col">
+    <header class="border-b bg-brand-900 text-white">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="font-semibold tracking-wide">Café Veritas</a>
+        <nav class="space-x-6 text-sm">
+          <a class="hover:underline" href="/about-us/our-vision">Our Vision</a>
+          <a class="hover:underline" href="/about-us/leadership">Leadership</a>
+          <a class="hover:underline" href="/events/">Events</a>
+          <a class="hover:underline" href="/past-topics/">Past Topics</a>
+          <a class="hover:underline" href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 py-8">
+        <slot />
+      </div>
+    </main>
+    <footer class="border-t bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <div class="font-semibold">Café Veritas</div>
+          <div class="text-slate-600 mt-2">A forum for civil, thoughtful dialogue on life’s hardest questions.</div>
+        </div>
+        <div>
+          <div class="font-semibold">Explore</div>
+          <ul class="mt-2 space-y-1">
+            <li><a class="hover:underline" href="/past-topics/">Past Topics</a></li>
+            <li><a class="hover:underline" href="/events/">Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold">Contact</div>
+          <p class="text-slate-600 mt-2">Add your contact details here.</p>
+        </div>
+      </div>
+      <div class="text-center text-xs text-slate-500 pb-6">© {new Date().getFullYear()} Café Veritas</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const title = "Café Veritas";
+const description = "Engaging tough questions with humility and hope.";
+---
+<BaseLayout {title} {description}>
+  <section class="py-10">
+    <h1 class="text-3xl md:text-4xl font-bold">Welcome to Café Veritas</h1>
+    <p class="mt-4 max-w-2xl text-slate-700">
+      This is a fresh rebuild scaffold. Use the <code>scripts/migrate.mjs</code> to pull content from
+      the existing site (assuming you have permission), or paste content into the Markdown pages under <code>src/pages</code>.
+    </p>
+  </section>
+
+  <section class="mt-10 grid md:grid-cols-3 gap-6">
+    <a href="/events/" class="border rounded-2xl p-6 hover:shadow">
+      <h3 class="font-semibold text-lg">Events</h3>
+      <p class="text-sm text-slate-600 mt-2">Upcoming public forums and lectures.</p>
+    </a>
+    <a href="/past-topics/" class="border rounded-2xl p-6 hover:shadow">
+      <h3 class="font-semibold text-lg">Past Topics</h3>
+      <p class="text-sm text-slate-600 mt-2">Browse previous conversations by theme.</p>
+    </a>
+    <a href="/about-us/our-vision" class="border rounded-2xl p-6 hover:shadow">
+      <h3 class="font-semibold text-lg">Our Vision</h3>
+      <p class="text-sm text-slate-600 mt-2">Why we exist and what we hope for.</p>
+    </a>
+  </section>
+</BaseLayout>
